@@ -1,0 +1,116 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-AG-023",
+  "status": "completed",
+  "status_reason": "已基于脱敏示例资料形成完整专业成果，并保留人工复核要求。",
+  "summary": "教学质量专项督导的脱敏示例成果，仅用于结构演示。",
+  "deliverables": {
+    "专项督导方案": [
+      {
+        "title": "专项督导方案",
+        "content": "根据脱敏示例输入形成的专项督导方案，包含依据、限制和下一步。",
+        "evidence_refs": [
+          "USER_INPUT_001"
+        ],
+        "risk_level": "medium",
+        "next_action": "由教学负责人/教研组长复核后使用"
+      }
+    ],
+    "质量诊断": [
+      {
+        "title": "质量诊断",
+        "content": "根据脱敏示例输入形成的质量诊断，包含依据、限制和下一步。",
+        "evidence_refs": [
+          "USER_INPUT_001"
+        ],
+        "risk_level": "medium",
+        "next_action": "由教学负责人/教研组长复核后使用"
+      }
+    ],
+    "改进实验": [
+      {
+        "title": "改进实验",
+        "content": "根据脱敏示例输入形成的改进实验，包含依据、限制和下一步。",
+        "evidence_refs": [
+          "USER_INPUT_001"
+        ],
+        "risk_level": "medium",
+        "next_action": "由教学负责人/教研组长复核后使用"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "title": "用户提供的脱敏示例资料",
+      "source_type": "user_provided",
+      "verification_status": "provided_by_user"
+    }
+  ],
+  "assumptions": [
+    "示例仅用于展示输出结构，不代表真实机构事实"
+  ],
+  "open_questions": [],
+  "human_review": {
+    "required": true,
+    "reviewer_role": "教学负责人/教研组长",
+    "review_points": [
+      "质量诊断、改进实验与教师管理决定；不得替代人事处分"
+    ],
+    "confirmed": true
+  },
+  "errors": [],
+  "next_action": "按待确认事项完成教学负责人/教研组长复核",
+  "agent_state": {
+    "state_version": "1.2.0",
+    "product_id": "JLZ-EDU-AG-023",
+    "current_stage": "S6_FINAL_DELIVERY",
+    "stage_status": "completed",
+    "completed_stages": [
+      "S1_SCOPE_CONFIRMATION",
+      "S2_EVIDENCE_INVENTORY",
+      "S3_PROFESSIONAL_DIAGNOSIS",
+      "S4_SOLUTION_DESIGN",
+      "S5_HUMAN_CONFIRMATION",
+      "S6_FINAL_DELIVERY"
+    ],
+    "confirmed_facts": [
+      {
+        "fact_id": "F001",
+        "statement": "示例输入口径已确认",
+        "source_refs": [
+          "USER_INPUT_001"
+        ],
+        "confirmed_by": "示例用户",
+        "confirmed_at": "2026-11-09"
+      }
+    ],
+    "open_questions": [],
+    "human_confirmation": {
+      "required": true,
+      "status": "confirmed",
+      "review_scope": "质量诊断、改进实验与教师管理决定；不得替代人事处分"
+    },
+    "recovery_context": {
+      "last_stable_stage": "S6_FINAL_DELIVERY",
+      "resume_instruction": "已完成，无需恢复",
+      "affected_stages": [],
+      "can_resume": false
+    },
+    "change_log": [],
+    "minimal_context": {
+      "user_goal": "围绕一个学科或校区的质量主题，组织证据采样、诊断、问题排序、改进实验和复测。",
+      "scope": "脱敏示例",
+      "constraints": [
+        "无外部收费API"
+      ],
+      "last_user_instruction": "生成示例成果"
+    }
+  },
+  "stage_result": {
+    "stage_id": "S6_FINAL_DELIVERY",
+    "outcome": "completed",
+    "next_stage": "S6_FINAL_DELIVERY",
+    "recovery_required": false,
+    "stage_notes": "示例阶段完成"
+  }
+}

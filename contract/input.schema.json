@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-AG-023/input.schema.json",
+  "title": "教学质量专项督导输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "supervision_scope",
+    "quality_goals",
+    "evidence_sources",
+    "sample_records",
+    "reviewer_roles"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "supervision_scope": {
+      "title": "督导范围",
+      "description": "学科、年级、课程或校区",
+      "type": "string",
+      "minLength": 1
+    },
+    "quality_goals": {
+      "title": "质量目标",
+      "description": "本次督导要回答的问题",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "evidence_sources": {
+      "title": "证据来源",
+      "description": "课堂、作业、测评、家长反馈等",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "sample_records": {
+      "title": "样本记录",
+      "description": "脱敏后的抽样信息",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "previous_actions": {
+      "title": "上一轮整改",
+      "description": "已采取措施和结果",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "reviewer_roles": {
+      "title": "复核角色",
+      "description": "教学负责人、教研组长等",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "resume_mode": {
+      "type": "string",
+      "enum": [
+        "new",
+        "resume",
+        "target_change",
+        "stage_rollback"
+      ],
+      "default": "new"
+    },
+    "agent_state": {
+      "type": "object",
+      "required": [
+        "state_version",
+        "product_id",
+        "current_stage",
+        "stage_status",
+        "completed_stages",
+        "confirmed_facts",
+        "open_questions",
+        "human_confirmation",
+        "recovery_context",
+        "change_log",
+        "minimal_context"
+      ],
+      "properties": {
+        "state_version": {
+          "const": "1.2.0"
+        },
+        "product_id": {
+          "const": "JLZ-EDU-AG-023"
+        },
+        "current_stage": {
+          "type": "string",
+          "enum": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY",
+            "S3_PROFESSIONAL_DIAGNOSIS",
+            "S4_SOLUTION_DESIGN",
+            "S5_HUMAN_CONFIRMATION",
+            "S6_FINAL_DELIVERY",
+            "PAUSED",
+            "FAILED"
+          ]
+        },
+        "stage_status": {
+          "type": "string",
+          "enum": [
+            "in_progress",
+            "paused",
+            "completed",
+            "failed"
+          ]
+        },
+        "completed_stages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "S1_SCOPE_CONFIRMATION",
+              "S2_EVIDENCE_INVENTORY",
+              "S3_PROFESSIONAL_DIAGNOSIS",
+              "S4_SOLUTION_DESIGN",
+              "S5_HUMAN_CONFIRMATION",
+              "S6_FINAL_DELIVERY"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "confirmed_facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "fact_id",
+              "statement",
+              "source_refs",
+              "confirmed_by"
+            ],
+            "properties": {
+              "fact_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "confirmed_by": {
+                "type": "string",
+                "minLength": 1
+              },
+              "confirmed_at": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "question_id",
+              "question",
+              "blocking",
+              "owner"
+            ],
+            "properties": {
+              "question_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              },
+              "blocking": {
+                "type": "boolean"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "needed_for": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "human_confirmation": {
+          "type": "object",
+          "required": [
+            "required",
+            "status"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "not_required",
+                "pending",
+                "confirmed",
+                "rejected"
+              ]
+            },
+            "review_scope": {
+              "type": "string"
+            },
+            "confirmed_by": {
+              "type": "string"
+            },
+            "confirmed_at": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "recovery_context": {
+          "type": "object",
+          "required": [
+            "last_stable_stage",
+            "resume_instruction",
+            "affected_stages",
+            "can_resume"
+          ],
+          "properties": {
+            "last_stable_stage": {
+              "type": "string",
+              "enum": [
+                "S1_SCOPE_CONFIRMATION",
+                "S2_EVIDENCE_INVENTORY",
+                "S3_PROFESSIONAL_DIAGNOSIS",
+                "S4_SOLUTION_DESIGN",
+                "S5_HUMAN_CONFIRMATION",
+                "S6_FINAL_DELIVERY",
+                "PAUSED",
+                "FAILED"
+              ]
+            },
+            "resume_instruction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "affected_stages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "uniqueItems": true
+            },
+            "can_resume": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "event_type",
+              "reason",
+              "affected_stages",
+              "occurred_at"
+            ],
+            "properties": {
+              "event_type": {
+                "type": "string",
+                "enum": [
+                  "resume",
+                  "target_change",
+                  "stage_rollback",
+                  "interruption"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "to_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "affected_stages": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "S1_SCOPE_CONFIRMATION",
+                    "S2_EVIDENCE_INVENTORY",
+                    "S3_PROFESSIONAL_DIAGNOSIS",
+                    "S4_SOLUTION_DESIGN",
+                    "S5_HUMAN_CONFIRMATION",
+                    "S6_FINAL_DELIVERY",
+                    "PAUSED",
+                    "FAILED"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "occurred_at": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "minimal_context": {
+          "type": "object",
+          "required": [
+            "user_goal",
+            "scope"
+          ],
+          "properties": {
+            "user_goal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "last_user_instruction": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "resume_mode"
+        ],
+        "properties": {
+          "resume_mode": {
+            "enum": [
+              "resume",
+              "target_change",
+              "stage_rollback"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "agent_state"
+        ]
+      }
+    }
+  ]
+}

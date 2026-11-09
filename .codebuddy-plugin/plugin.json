@@ -1,0 +1,63 @@
+{
+  "name": "edu-teaching-quality-supervision-agent",
+  "version": "1.0.0",
+  "description": "A multi-step education agent for Teaching Quality Supervision Agent.",
+  "author": {
+    "name": "广州金励泽科技服务有限公司",
+    "email": "270911570+yangsongbaofu-dot@users.noreply.github.com"
+  },
+  "agents": [
+    "./agents/edu-teaching-quality-supervision-agent.md"
+  ],
+  "expertType": "agent",
+  "agentName": "edu-teaching-quality-supervision-agent",
+  "displayName": {
+    "en": "Teaching Quality Supervision Agent",
+    "zh": "教学质量专项督导"
+  },
+  "profession": {
+    "en": "Teaching Quality Supervision Agent",
+    "zh": "教学质量专项督导"
+  },
+  "displayDescription": {
+    "en": "Multi-step professional workflow for Teaching Quality Supervision Agent.",
+    "zh": "围绕一个学科或校区的质量主题，组织证据采样、诊断、问题排序、改进实验和复测。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "15-Education",
+  "defaultInitPrompt": {
+    "en": "Help me complete Teaching Quality Supervision Agent.",
+    "zh": "请帮我完成一次教学质量专项督导"
+  },
+  "plugin": "edu-teaching-quality-supervision-agent",
+  "tags": [
+    {
+      "en": "Education",
+      "zh": "教培机构"
+    },
+    {
+      "en": "Professional Workflow",
+      "zh": "专业工作流"
+    },
+    {
+      "en": "Teaching Quality Supervision Agent",
+      "zh": "教学质量专项督导"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Help me complete Teaching Quality Supervision Agent.",
+      "zh": "请帮我完成一次教学质量专项督导"
+    },
+    {
+      "en": "Start with scope and evidence inventory.",
+      "zh": "请先确认范围并盘点资料"
+    },
+    {
+      "en": "Generate the final deliverables with risks and open questions.",
+      "zh": "请生成最终成果，并列出风险与待确认事项"
+    }
+  ],
+  "homepage": "https://github.com/jinlize-tech/edu-teaching-quality-supervision-agent",
+  "license": "Apache-2.0"
+}

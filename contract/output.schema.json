@@ -1,0 +1,1135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-AG-023/output.schema.json",
+  "title": "教学质量专项督导输出契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "product_id",
+    "status",
+    "status_reason",
+    "summary",
+    "agent_state",
+    "stage_result"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "product_id": {
+      "const": "JLZ-EDU-AG-023"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "completed_with_limits",
+        "needs_input",
+        "needs_confirmation",
+        "failed"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "deliverables": {
+      "type": "object",
+      "properties": {
+        "专项督导方案": {
+          "type": "array",
+          "description": "专项督导方案的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "证据样本表": {
+          "type": "array",
+          "description": "证据样本表的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "质量诊断": {
+          "type": "array",
+          "description": "质量诊断的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "问题优先级": {
+          "type": "array",
+          "description": "问题优先级的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "改进实验": {
+          "type": "array",
+          "description": "改进实验的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          },
+          "minItems": 1
+        },
+        "责任/时间表": {
+          "type": "array",
+          "description": "责任/时间表的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "复测标准": {
+          "type": "array",
+          "description": "复测标准的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "升级项": {
+          "type": "array",
+          "description": "升级项的结构化条目",
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "content"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "content": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!\\s*$)(?!\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\s*$).*\\S.*$",
+                "description": "不得为空白或使用“暂无”“待完善”等占位文本。"
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "risk_level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high",
+                  "blocked"
+                ]
+              },
+              "next_action": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false,
+      "minProperties": 0
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "source_type",
+          "verification_status"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "source_date": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string"
+          },
+          "excerpt": {
+            "type": "string"
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "provided_by_user",
+              "unverified",
+              "not_required"
+            ]
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "required": [
+        "required",
+        "review_points"
+      ],
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "reviewer_role": {
+          "type": "string"
+        },
+        "review_points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "confirmed": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "INPUT_MISSING",
+              "INPUT_INVALID",
+              "INPUT_CONFLICT",
+              "OUT_OF_SCOPE",
+              "SENSITIVE_DATA",
+              "EVIDENCE_UNVERIFIED",
+              "TOOL_UNAVAILABLE",
+              "HUMAN_REVIEW_REQUIRED",
+              "CALCULATION_FAILED",
+              "INDEPENDENCE_VIOLATION",
+              "OUTPUT_INCOMPLETE"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "field": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "info",
+              "warning",
+              "error",
+              "blocking"
+            ]
+          },
+          "next_action": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "status_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "next_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_state": {
+      "type": "object",
+      "required": [
+        "state_version",
+        "product_id",
+        "current_stage",
+        "stage_status",
+        "completed_stages",
+        "confirmed_facts",
+        "open_questions",
+        "human_confirmation",
+        "recovery_context",
+        "change_log",
+        "minimal_context"
+      ],
+      "properties": {
+        "state_version": {
+          "const": "1.2.0"
+        },
+        "product_id": {
+          "const": "JLZ-EDU-AG-023"
+        },
+        "current_stage": {
+          "type": "string",
+          "enum": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY",
+            "S3_PROFESSIONAL_DIAGNOSIS",
+            "S4_SOLUTION_DESIGN",
+            "S5_HUMAN_CONFIRMATION",
+            "S6_FINAL_DELIVERY",
+            "PAUSED",
+            "FAILED"
+          ]
+        },
+        "stage_status": {
+          "type": "string",
+          "enum": [
+            "in_progress",
+            "paused",
+            "completed",
+            "failed"
+          ]
+        },
+        "completed_stages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "S1_SCOPE_CONFIRMATION",
+              "S2_EVIDENCE_INVENTORY",
+              "S3_PROFESSIONAL_DIAGNOSIS",
+              "S4_SOLUTION_DESIGN",
+              "S5_HUMAN_CONFIRMATION",
+              "S6_FINAL_DELIVERY"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "confirmed_facts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "fact_id",
+              "statement",
+              "source_refs",
+              "confirmed_by"
+            ],
+            "properties": {
+              "fact_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "statement": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "confirmed_by": {
+                "type": "string",
+                "minLength": 1
+              },
+              "confirmed_at": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "question_id",
+              "question",
+              "blocking",
+              "owner"
+            ],
+            "properties": {
+              "question_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1
+              },
+              "blocking": {
+                "type": "boolean"
+              },
+              "owner": {
+                "type": "string"
+              },
+              "needed_for": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "human_confirmation": {
+          "type": "object",
+          "required": [
+            "required",
+            "status"
+          ],
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "not_required",
+                "pending",
+                "confirmed",
+                "rejected"
+              ]
+            },
+            "review_scope": {
+              "type": "string"
+            },
+            "confirmed_by": {
+              "type": "string"
+            },
+            "confirmed_at": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "recovery_context": {
+          "type": "object",
+          "required": [
+            "last_stable_stage",
+            "resume_instruction",
+            "affected_stages",
+            "can_resume"
+          ],
+          "properties": {
+            "last_stable_stage": {
+              "type": "string",
+              "enum": [
+                "S1_SCOPE_CONFIRMATION",
+                "S2_EVIDENCE_INVENTORY",
+                "S3_PROFESSIONAL_DIAGNOSIS",
+                "S4_SOLUTION_DESIGN",
+                "S5_HUMAN_CONFIRMATION",
+                "S6_FINAL_DELIVERY",
+                "PAUSED",
+                "FAILED"
+              ]
+            },
+            "resume_instruction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "affected_stages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "uniqueItems": true
+            },
+            "can_resume": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        },
+        "change_log": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "event_type",
+              "reason",
+              "affected_stages",
+              "occurred_at"
+            ],
+            "properties": {
+              "event_type": {
+                "type": "string",
+                "enum": [
+                  "resume",
+                  "target_change",
+                  "stage_rollback",
+                  "interruption"
+                ]
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "from_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "to_stage": {
+                "type": "string",
+                "enum": [
+                  "S1_SCOPE_CONFIRMATION",
+                  "S2_EVIDENCE_INVENTORY",
+                  "S3_PROFESSIONAL_DIAGNOSIS",
+                  "S4_SOLUTION_DESIGN",
+                  "S5_HUMAN_CONFIRMATION",
+                  "S6_FINAL_DELIVERY",
+                  "PAUSED",
+                  "FAILED"
+                ]
+              },
+              "affected_stages": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "S1_SCOPE_CONFIRMATION",
+                    "S2_EVIDENCE_INVENTORY",
+                    "S3_PROFESSIONAL_DIAGNOSIS",
+                    "S4_SOLUTION_DESIGN",
+                    "S5_HUMAN_CONFIRMATION",
+                    "S6_FINAL_DELIVERY",
+                    "PAUSED",
+                    "FAILED"
+                  ]
+                },
+                "uniqueItems": true
+              },
+              "occurred_at": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "minimal_context": {
+          "type": "object",
+          "required": [
+            "user_goal",
+            "scope"
+          ],
+          "properties": {
+            "user_goal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "last_user_instruction": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "stage_result": {
+      "type": "object",
+      "required": [
+        "stage_id",
+        "outcome",
+        "next_stage",
+        "recovery_required"
+      ],
+      "properties": {
+        "stage_id": {
+          "type": "string",
+          "enum": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY",
+            "S3_PROFESSIONAL_DIAGNOSIS",
+            "S4_SOLUTION_DESIGN",
+            "S5_HUMAN_CONFIRMATION",
+            "S6_FINAL_DELIVERY",
+            "PAUSED",
+            "FAILED"
+          ]
+        },
+        "outcome": {
+          "type": "string",
+          "enum": [
+            "completed",
+            "paused",
+            "blocked",
+            "failed"
+          ]
+        },
+        "next_stage": {
+          "type": "string",
+          "enum": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY",
+            "S3_PROFESSIONAL_DIAGNOSIS",
+            "S4_SOLUTION_DESIGN",
+            "S5_HUMAN_CONFIRMATION",
+            "S6_FINAL_DELIVERY",
+            "PAUSED",
+            "FAILED"
+          ]
+        },
+        "recovery_required": {
+          "type": "boolean"
+        },
+        "stage_notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "limitation_reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completed_scope": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "blocked_scope": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "completed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "deliverables",
+          "evidence",
+          "assumptions",
+          "open_questions",
+          "human_review",
+          "errors",
+          "next_action",
+          "agent_state",
+          "stage_result"
+        ],
+        "properties": {
+          "deliverables": {
+            "minProperties": 1,
+            "required": [
+              "专项督导方案",
+              "质量诊断",
+              "改进实验"
+            ]
+          },
+          "errors": {
+            "maxItems": 0
+          },
+          "human_review": {
+            "required": [
+              "required",
+              "confirmed",
+              "review_points"
+            ],
+            "properties": {
+              "required": {
+                "const": true
+              },
+              "confirmed": {
+                "const": true
+              },
+              "review_points": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "completed_with_limits"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "deliverables",
+          "evidence",
+          "assumptions",
+          "open_questions",
+          "human_review",
+          "errors",
+          "next_action",
+          "agent_state",
+          "stage_result",
+          "limitation_reason",
+          "completed_scope",
+          "blocked_scope"
+        ],
+        "properties": {
+          "deliverables": {
+            "minProperties": 1
+          },
+          "open_questions": {
+            "minItems": 1
+          },
+          "errors": {
+            "minItems": 1
+          },
+          "limitation_reason": {
+            "minLength": 1
+          },
+          "completed_scope": {
+            "minItems": 1
+          },
+          "blocked_scope": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "needs_input"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "open_questions",
+          "errors",
+          "next_action"
+        ],
+        "properties": {
+          "deliverables": {
+            "minProperties": 0
+          },
+          "open_questions": {
+            "minItems": 1
+          },
+          "errors": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "needs_confirmation"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "open_questions",
+          "human_review",
+          "errors",
+          "next_action"
+        ],
+        "properties": {
+          "deliverables": {
+            "minProperties": 0
+          },
+          "open_questions": {
+            "minItems": 1
+          },
+          "human_review": {
+            "required": [
+              "required",
+              "review_points"
+            ],
+            "properties": {
+              "required": {
+                "const": true
+              },
+              "confirmed": {
+                "const": false
+              },
+              "review_points": {
+                "minItems": 1
+              }
+            }
+          },
+          "errors": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "const": "failed"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "errors",
+          "next_action"
+        ],
+        "properties": {
+          "errors": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ],
+  "x-g0-completion-rules": {
+    "core_outputs": [
+      "专项督导方案",
+      "质量诊断",
+      "改进实验"
+    ],
+    "optional_outputs": [
+      "证据样本表",
+      "问题优先级",
+      "责任/时间表",
+      "复测标准",
+      "升级项"
+    ],
+    "empty_optional_lists_allowed": true,
+    "placeholder_text_forbidden": true,
+    "completed_with_limits_requires": [
+      "limitation_reason",
+      "completed_scope",
+      "blocked_scope"
+    ]
+  }
+}

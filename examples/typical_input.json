@@ -1,0 +1,23 @@
+{
+  "contract_version": "1.2.0",
+  "data_status": "confirmed",
+  "contains_sensitive_data": false,
+  "requested_output_language": "zh-CN",
+  "supervision_scope": "督导范围已核对（脱敏示例）",
+  "quality_goals": [
+    {}
+  ],
+  "evidence_sources": [
+    {}
+  ],
+  "sample_records": [
+    {}
+  ],
+  "previous_actions": [
+    {}
+  ],
+  "reviewer_roles": [
+    {}
+  ],
+  "resume_mode": "new"
+}

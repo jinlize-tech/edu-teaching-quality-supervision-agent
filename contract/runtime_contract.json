@@ -1,0 +1,112 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-AG-023",
+  "product_name": "教学质量专项督导",
+  "product_type": "Agent",
+  "repository_name": "edu-teaching-quality-supervision-agent",
+  "repository_url": "https://github.com/jinlize-tech/edu-teaching-quality-supervision-agent",
+  "product_version": "1.0.0",
+  "batch": 2,
+  "business_category": "10 教学质量与学习证据中心",
+  "high_risk": true,
+  "deterministic": false,
+  "agent": true,
+  "core_outputs": [
+    "专项督导方案",
+    "质量诊断",
+    "改进实验"
+  ],
+  "optional_outputs": [
+    "证据样本表",
+    "问题优先级",
+    "责任/时间表",
+    "复测标准",
+    "升级项"
+  ],
+  "all_outputs": [
+    "专项督导方案",
+    "质量诊断",
+    "改进实验",
+    "证据样本表",
+    "问题优先级",
+    "责任/时间表",
+    "复测标准",
+    "升级项"
+  ],
+  "human_review_required": true,
+  "reviewer_role": "教学负责人/教研组长",
+  "commercial_boundary": {
+    "other_product": "教师成长反馈专家",
+    "allowed": "机构、学科或校区层面的教学质量专项督导；可分析课程、课堂、作业、测评等多源证据并设计改进实验。",
+    "forbidden": "不得复制教师个人长期成长反馈体系、个人能力评分、教练式陪跑、私域运营或任何收费商业专家素材。"
+  },
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "supervision_scope",
+    "quality_goals",
+    "evidence_sources",
+    "sample_records",
+    "reviewer_roles"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "supervision_scope": {
+      "type": "string"
+    },
+    "quality_goals": {
+      "type": "array"
+    },
+    "evidence_sources": {
+      "type": "array"
+    },
+    "sample_records": {
+      "type": "array"
+    },
+    "previous_actions": {
+      "type": "array"
+    },
+    "reviewer_roles": {
+      "type": "array"
+    },
+    "resume_mode": {
+      "type": "string",
+      "enum": [
+        "new",
+        "resume",
+        "target_change",
+        "stage_rollback"
+      ],
+      "default": "new"
+    },
+    "agent_state": {
+      "type": "object"
+    }
+  },
+  "expected_scenario_count": 14,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

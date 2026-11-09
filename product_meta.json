@@ -1,0 +1,33 @@
+{
+  "number": 23,
+  "product_id": "JLZ-EDU-AG-023",
+  "candidate_id": "CAND-019",
+  "chinese_name": "教学质量专项督导",
+  "english_name": "Teaching Quality Supervision Agent",
+  "repository_name": "edu-teaching-quality-supervision-agent",
+  "repository_url": "https://github.com/jinlize-tech/edu-teaching-quality-supervision-agent",
+  "product_type": "Agent",
+  "category": "10 教学质量与学习证据中心",
+  "batch": 2,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "专项督导方案",
+    "质量诊断",
+    "改进实验"
+  ],
+  "optional_outputs": [
+    "证据样本表",
+    "问题优先级",
+    "责任/时间表",
+    "复测标准",
+    "升级项"
+  ],
+  "high_risk": true,
+  "deterministic": false,
+  "scenario_count": 14,
+  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

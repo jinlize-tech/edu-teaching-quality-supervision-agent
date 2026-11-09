@@ -1,0 +1,15 @@
+{
+  "name": "edu-teaching-quality-supervision-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teaching Quality Supervision Agent",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node tests/run_tests.js",
+    "validate:input": "node scripts/validate_input.js examples/typical_input.json",
+    "validate:output": "node scripts/validate_output.js examples/typical_output.json"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

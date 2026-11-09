@@ -1,0 +1,1859 @@
+{
+  "cases": [
+    {
+      "case_id": "completed_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "专项督导方案的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "证据样本表": [
+            {
+              "title": "证据样本表",
+              "content": "证据样本表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [
+            {
+              "title": "问题优先级",
+              "content": "问题优先级的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [
+            {
+              "title": "责任/时间表",
+              "content": "责任/时间表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "复测标准": [
+            {
+              "title": "复测标准",
+              "content": "复测标准的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "升级项": [
+            {
+              "title": "升级项",
+              "content": "升级项的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_optional_empty_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "专项督导方案的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "证据样本表": [],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [],
+          "复测标准": [],
+          "升级项": []
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_all_deliverables_empty_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [],
+          "证据样本表": [],
+          "质量诊断": [],
+          "问题优先级": [],
+          "改进实验": [],
+          "责任/时间表": [],
+          "复测标准": [],
+          "升级项": []
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_core_missing_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "证据样本表": [
+            {
+              "title": "证据样本表",
+              "content": "证据样本表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [
+            {
+              "title": "问题优先级",
+              "content": "问题优先级的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [
+            {
+              "title": "责任/时间表",
+              "content": "责任/时间表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "复测标准": [
+            {
+              "title": "复测标准",
+              "content": "复测标准的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "升级项": [
+            {
+              "title": "升级项",
+              "content": "升级项的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_core_empty_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [],
+          "证据样本表": [
+            {
+              "title": "证据样本表",
+              "content": "证据样本表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [
+            {
+              "title": "问题优先级",
+              "content": "问题优先级的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [
+            {
+              "title": "责任/时间表",
+              "content": "责任/时间表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "复测标准": [
+            {
+              "title": "复测标准",
+              "content": "复测标准的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "升级项": [
+            {
+              "title": "升级项",
+              "content": "升级项的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_core_whitespace_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "   \t ",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "证据样本表": [
+            {
+              "title": "证据样本表",
+              "content": "证据样本表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [
+            {
+              "title": "问题优先级",
+              "content": "问题优先级的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [
+            {
+              "title": "责任/时间表",
+              "content": "责任/时间表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "复测标准": [
+            {
+              "title": "复测标准",
+              "content": "复测标准的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "升级项": [
+            {
+              "title": "升级项",
+              "content": "升级项的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_placeholder_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed",
+        "status_reason": "核心成果已完整生成。",
+        "summary": "教学质量专项督导的completed响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "待完善",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "证据样本表": [
+            {
+              "title": "证据样本表",
+              "content": "证据样本表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "质量诊断": [
+            {
+              "title": "质量诊断",
+              "content": "质量诊断的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "问题优先级": [
+            {
+              "title": "问题优先级",
+              "content": "问题优先级的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "改进实验": [
+            {
+              "title": "改进实验",
+              "content": "改进实验的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "责任/时间表": [
+            {
+              "title": "责任/时间表",
+              "content": "责任/时间表的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "复测标准": [
+            {
+              "title": "复测标准",
+              "content": "复测标准的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ],
+          "升级项": [
+            {
+              "title": "升级项",
+              "content": "升级项的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "用户输入口径已确认"
+        ],
+        "open_questions": [],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "专业复核角色",
+          "review_points": [
+            "已由指定专业角色完成人工复核"
+          ],
+          "confirmed": true
+        },
+        "errors": [],
+        "next_action": "由用户确认并使用成果",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "completed_with_limits_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed_with_limits",
+        "status_reason": "已完成可确认部分，但部分范围受证据或输入限制。",
+        "summary": "教学质量专项督导的completed_with_limits响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "专项督导方案的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "受限部分以已完成范围处理"
+        ],
+        "open_questions": [
+          "待补充受限范围所需证据"
+        ],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "业务负责人",
+          "review_points": [
+            "确认受限范围"
+          ],
+          "confirmed": false
+        },
+        "errors": [
+          {
+            "code": "EVIDENCE_UNVERIFIED",
+            "message": "部分证据未核实",
+            "severity": "warning",
+            "next_action": "补充证据"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        },
+        "limitation_reason": "缺少部分核验证据，无法完成全部范围",
+        "completed_scope": [
+          "已完成专项督导方案"
+        ],
+        "blocked_scope": [
+          "未完成改进实验"
+        ]
+      }
+    },
+    {
+      "case_id": "completed_with_limits_missing_scope_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "completed_with_limits",
+        "status_reason": "已完成可确认部分，但部分范围受证据或输入限制。",
+        "summary": "教学质量专项督导的completed_with_limits响应。",
+        "deliverables": {
+          "专项督导方案": [
+            {
+              "title": "专项督导方案",
+              "content": "专项督导方案的可复核实质结果",
+              "evidence_refs": [
+                "USER_INPUT_001"
+              ],
+              "risk_level": "low",
+              "next_action": "由用户确认后进入下一步"
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "title": "用户输入",
+            "source_type": "user_provided",
+            "verification_status": "provided_by_user"
+          }
+        ],
+        "assumptions": [
+          "受限部分以已完成范围处理"
+        ],
+        "open_questions": [
+          "待补充受限范围所需证据"
+        ],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "业务负责人",
+          "review_points": [
+            "确认受限范围"
+          ],
+          "confirmed": false
+        },
+        "errors": [
+          {
+            "code": "EVIDENCE_UNVERIFIED",
+            "message": "部分证据未核实",
+            "severity": "warning",
+            "next_action": "补充证据"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "needs_input_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "needs_input",
+        "status_reason": "关键输入不足，不能完成核心成果。",
+        "summary": "教学质量专项督导的needs_input响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [
+          "请补充缺失的关键输入"
+        ],
+        "human_review": {
+          "required": false,
+          "review_points": [],
+          "confirmed": true
+        },
+        "errors": [
+          {
+            "code": "INPUT_MISSING",
+            "message": "缺少关键输入",
+            "field": "required_input",
+            "severity": "blocking",
+            "next_action": "补充输入"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "needs_input_without_reason_or_next_action_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "needs_input",
+        "status_reason": "关键输入不足，不能完成核心成果。",
+        "summary": "教学质量专项督导的needs_input响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [
+          "请补充缺失的关键输入"
+        ],
+        "human_review": {
+          "required": false,
+          "review_points": [],
+          "confirmed": true
+        },
+        "errors": [],
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "needs_confirmation_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "needs_confirmation",
+        "status_reason": "存在冲突或需人工确认的高影响结论。",
+        "summary": "教学质量专项督导的needs_confirmation响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [
+          "请确认两个版本中的唯一有效版本"
+        ],
+        "human_review": {
+          "required": true,
+          "reviewer_role": "业务负责人",
+          "review_points": [
+            "冲突口径"
+          ],
+          "confirmed": false
+        },
+        "errors": [
+          {
+            "code": "INPUT_CONFLICT",
+            "message": "输入版本冲突",
+            "field": "versioned_input",
+            "severity": "blocking",
+            "next_action": "确认唯一版本"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "needs_confirmation_without_human_review_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "needs_confirmation",
+        "status_reason": "存在冲突或需人工确认的高影响结论。",
+        "summary": "教学质量专项督导的needs_confirmation响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [
+          "请确认两个版本中的唯一有效版本"
+        ],
+        "errors": [
+          {
+            "code": "INPUT_CONFLICT",
+            "message": "输入版本冲突",
+            "field": "versioned_input",
+            "severity": "blocking",
+            "next_action": "确认唯一版本"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "failed_valid",
+      "expected_valid": true,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "failed",
+        "status_reason": "处理失败，不能生成可用成果。",
+        "summary": "教学质量专项督导的failed响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [],
+        "human_review": {
+          "required": false,
+          "review_points": [],
+          "confirmed": true
+        },
+        "errors": [
+          {
+            "code": "OUTPUT_INCOMPLETE",
+            "message": "处理失败",
+            "severity": "blocking",
+            "next_action": "修复后重试"
+          }
+        ],
+        "next_action": "根据状态原因补充或重试",
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    },
+    {
+      "case_id": "failed_without_reason_or_next_action_invalid",
+      "expected_valid": false,
+      "instance": {
+        "contract_version": "1.2.0",
+        "product_id": "JLZ-EDU-AG-023",
+        "status": "failed",
+        "status_reason": "处理失败，不能生成可用成果。",
+        "summary": "教学质量专项督导的failed响应。",
+        "deliverables": {},
+        "evidence": [],
+        "assumptions": [],
+        "open_questions": [],
+        "human_review": {
+          "required": false,
+          "review_points": [],
+          "confirmed": true
+        },
+        "errors": [],
+        "agent_state": {
+          "state_version": "1.2.0",
+          "product_id": "JLZ-EDU-AG-023",
+          "current_stage": "S3_PROFESSIONAL_DIAGNOSIS",
+          "stage_status": "in_progress",
+          "completed_stages": [
+            "S1_SCOPE_CONFIRMATION",
+            "S2_EVIDENCE_INVENTORY"
+          ],
+          "confirmed_facts": [
+            {
+              "fact_id": "F001",
+              "statement": "用户已确认任务范围和核心输入口径",
+              "source_refs": [
+                "user_input"
+              ],
+              "confirmed_by": "用户",
+              "confirmed_at": "2026-11-09"
+            }
+          ],
+          "open_questions": [
+            {
+              "question_id": "Q001",
+              "question": "是否确认当前结论仅用于内部评审",
+              "blocking": false,
+              "owner": "用户",
+              "needed_for": "S6_FINAL_DELIVERY"
+            }
+          ],
+          "human_confirmation": {
+            "required": false,
+            "status": "not_required",
+            "review_scope": "最终业务结论"
+          },
+          "recovery_context": {
+            "last_stable_stage": "S2_EVIDENCE_INVENTORY",
+            "resume_instruction": "从资料盘点和已确认事实继续，不重复索取已确认信息。",
+            "affected_stages": [],
+            "can_resume": true
+          },
+          "change_log": [],
+          "minimal_context": {
+            "user_goal": "完成本次专业任务并形成可复核成果",
+            "scope": "当前产品定义范围",
+            "constraints": [
+              "最小必要状态",
+              "不依赖外部数据库"
+            ],
+            "last_user_instruction": "继续当前阶段"
+          }
+        },
+        "stage_result": {
+          "stage_id": "S3_PROFESSIONAL_DIAGNOSIS",
+          "outcome": "completed",
+          "next_stage": "S4_SOLUTION_DESIGN",
+          "recovery_required": false,
+          "stage_notes": "阶段结果可结构化传递"
+        }
+      }
+    }
+  ]
+}

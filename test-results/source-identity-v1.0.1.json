@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-AG-023",
+  "repository_name": "edu-teaching-quality-supervision-agent",
+  "version": "1.0.1",
+  "tested_source_commit": "dfc23e4b713593fd40f483b7e912e31b945ca4c3",
+  "tested_source_tree_sha": "08d519683624a1f0deaf323e29a90fd028500d65",
+  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.1.zip",
+  "package_sha256": "2761BDEFC0641C270436D61BB1E51C82E65C5DBC631A3CA2C5626B89E19DDEC3",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 63,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": "Education AI Tools Maintainers"
+}

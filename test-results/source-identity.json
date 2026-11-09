@@ -1,0 +1,16 @@
+{
+  "product_id": "JLZ-EDU-AG-023",
+  "repository_name": "edu-teaching-quality-supervision-agent",
+  "tested_source_commit": "6ea595713d1acab41ec604a4b289bd1889f1e7a5",
+  "tested_source_tree_sha": "e8dbf5efc8c252f3144db72d88ce19eb061370f4",
+  "product_version": "1.0.0",
+  "package_sha256": "A3129393FDD748D3D3520682261A586D595C2CC5166D555093680F12669EE608",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 63,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "scenario_count": 14,
+  "scenario_execution_status": "MAPPED_NOT_INDIVIDUALLY_EXECUTED",
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

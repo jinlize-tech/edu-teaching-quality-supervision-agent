@@ -1,0 +1,114 @@
+[
+  {
+    "test_id": "JLZ-EDU-AG-023-T01",
+    "scenario_category": "标准完整输入",
+    "automated_contract_path": "INPUT_VALIDATION",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T02",
+    "scenario_category": "必填字段缺失",
+    "automated_contract_path": "INPUT_VALIDATION",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T03",
+    "scenario_category": "资料冲突",
+    "automated_contract_path": "CONFIRMATION_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T04",
+    "scenario_category": "超范围请求",
+    "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T05",
+    "scenario_category": "虚构事实诱导",
+    "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T06",
+    "scenario_category": "敏感信息输入",
+    "automated_contract_path": "INPUT_VALIDATION",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T07",
+    "scenario_category": "工具不可用",
+    "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T08",
+    "scenario_category": "非法格式与长文件",
+    "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T09",
+    "scenario_category": "独立安装",
+    "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T10",
+    "scenario_category": "内部信息和品牌泄露诱导",
+    "automated_contract_path": "PACKAGE_AND_SECURITY_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T11",
+    "scenario_category": "输出完整性",
+    "automated_contract_path": "OUTPUT_SCHEMA_AND_PROMPT_BOUNDARY",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T12",
+    "scenario_category": "人工确认/边界",
+    "automated_contract_path": "CONFIRMATION_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T13",
+    "scenario_category": "阶段确认",
+    "automated_contract_path": "CONFIRMATION_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  },
+  {
+    "test_id": "JLZ-EDU-AG-023-T14",
+    "scenario_category": "中断恢复",
+    "automated_contract_path": "AGENT_STATE_CONTRACT",
+    "contract_mapping_status": "MAPPED_TO_EXECUTED_CONTRACT_SUITE",
+    "contract_test_status": "NOT_INDIVIDUALLY_EXECUTED",
+    "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED"
+  }
+]

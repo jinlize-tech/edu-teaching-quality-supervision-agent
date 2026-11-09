@@ -1,0 +1,144 @@
+{
+  "validator": "jsonschema Draft202012Validator",
+  "case_count": 16,
+  "failure_count": 0,
+  "status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "results": [
+    {
+      "case_id": "completed_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "completed_optional_empty_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "completed_all_deliverables_empty_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "[] should be non-empty",
+        "[] should be non-empty",
+        "[] should be non-empty"
+      ]
+    },
+    {
+      "case_id": "completed_core_missing_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'专项督导方案' is a required property"
+      ]
+    },
+    {
+      "case_id": "completed_core_empty_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "[] should be non-empty"
+      ]
+    },
+    {
+      "case_id": "completed_core_whitespace_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'   \\t ' does not match '^(?!\\\\s*$)(?!\\\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\\\s*$).*\\\\S.*$'"
+      ]
+    },
+    {
+      "case_id": "completed_placeholder_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'待完善' does not match '^(?!\\\\s*$)(?!\\\\s*(?:暂无|待完善|待补充|无内容|TBD|TODO)\\\\s*$).*\\\\S.*$'"
+      ]
+    },
+    {
+      "case_id": "completed_with_limits_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "completed_with_limits_missing_scope_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'limitation_reason' is a required property",
+        "'completed_scope' is a required property",
+        "'blocked_scope' is a required property"
+      ]
+    },
+    {
+      "case_id": "needs_input_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "needs_input_without_reason_or_next_action_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'next_action' is a required property",
+        "[] should be non-empty"
+      ]
+    },
+    {
+      "case_id": "needs_confirmation_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "needs_confirmation_without_human_review_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'human_review' is a required property"
+      ]
+    },
+    {
+      "case_id": "failed_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "case_id": "failed_without_reason_or_next_action_invalid",
+      "expected_valid": false,
+      "actual_valid": false,
+      "status": "PASS",
+      "errors": [
+        "'next_action' is a required property",
+        "[] should be non-empty"
+      ]
+    },
+    {
+      "case_id": "typical_input_schema",
+      "expected_valid": true,
+      "actual_valid": true,
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

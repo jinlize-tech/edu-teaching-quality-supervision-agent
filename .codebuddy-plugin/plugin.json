@@ -1,9 +1,9 @@
 {
   "name": "edu-teaching-quality-supervision-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A multi-step education agent for Teaching Quality Supervision Agent.",
   "author": {
-    "name": "广州金励泽科技服务有限公司",
+    "name": "Education AI Tools Maintainers",
     "email": "270911570+yangsongbaofu-dot@users.noreply.github.com"
   },
   "agents": [

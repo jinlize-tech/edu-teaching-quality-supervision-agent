@@ -72,7 +72,7 @@ for (const file of expectedFiles()) {
 
 const version = fs.readFileSync(path.join(repo, 'VERSION'), 'utf8').trim();
 check('T2_METADATA_CONTRACT', 'version', () => {
-  assert.strictEqual(version, '1.0.0');
+  assert.strictEqual(version, '1.0.1');
   assert.strictEqual(contract.product_version, version);
   return version;
 });
@@ -275,9 +275,9 @@ const result = {
 };
 
 fs.mkdirSync(path.join(repo, 'test-results'), { recursive: true });
-fs.writeFileSync(path.join(repo, 'test-results', 'v1.0.0.json'), JSON.stringify(result, null, 2) + '\n');
+fs.writeFileSync(path.join(repo, 'test-results', 'v1.0.1.json'), JSON.stringify(result, null, 2) + '\n');
 fs.writeFileSync(path.join(repo, 'test-results', 'scenario-execution.json'), JSON.stringify(scenarioResults, null, 2) + '\n');
-const report = `# 产品测试报告 v1.0.0
+const report = `# 产品测试报告 v1.0.1
 
 - 产品：${contract.product_name}（${contract.product_id}）
 - 本地测试：${result.overall_status}
@@ -298,7 +298,7 @@ ${['T1_FILE_STRUCTURE','T2_METADATA_CONTRACT','T3_INPUT_CONTRACT','T4_OUTPUT_CON
 
 生成式模型输出未在本地运行；${result.scenario_count}项既定场景已映射到自动化契约路径，但未逐项进行生成式模型运行，也不能冒充WorkBuddy真实模型调用。
 `;
-fs.writeFileSync(path.join(repo, 'test-results', 'TEST_REPORT-v1.0.0.md'), report);
+fs.writeFileSync(path.join(repo, 'test-results', 'TEST_REPORT-v1.0.1.md'), report);
 
 console.log(JSON.stringify({
   product_id: result.product_id,

@@ -6,10 +6,10 @@
 | 候选来源 | `CAND-019` |
 | 产品类型 | Agent |
 | 业务中心 | 10 教学质量与学习证据中心 |
-| 版本 | `1.0.0` |
+| 版本 | `1.0.1` |
 | 许可证 | Apache-2.0 |
 | 研发授权 | `JLZ-EDU-EXPANSION-30-FULL-DELIVERY` |
-| 当前状态 | `LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION` |
+| 当前状态 | `DOCUMENTATION_AND_METADATA_PATCH_1.0.1` |
 
 ## 定位
 

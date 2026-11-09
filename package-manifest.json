@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-AG-023",
   "repository_name": "edu-teaching-quality-supervision-agent",
   "product_type": "Agent",
-  "version": "1.0.0",
-  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.0.zip",
-  "sha256": "A3129393FDD748D3D3520682261A586D595C2CC5166D555093680F12669EE608",
-  "bytes": 48121,
+  "version": "1.0.1",
+  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.1.zip",
+  "sha256": "2761BDEFC0641C270436D61BB1E51C82E65C5DBC631A3CA2C5626B89E19DDEC3",
+  "bytes": 49270,
   "entries": [
     "edu-teaching-quality-supervision-agent/README.md",
     "edu-teaching-quality-supervision-agent/PRODUCT_SPEC.md",
@@ -38,5 +38,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T11:58:27.753500+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.0.zip",
+  "previous_package_sha256": "A3129393FDD748D3D3520682261A586D595C2CC5166D555093680F12669EE608",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }

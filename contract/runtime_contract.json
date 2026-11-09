@@ -5,7 +5,7 @@
   "product_type": "Agent",
   "repository_name": "edu-teaching-quality-supervision-agent",
   "repository_url": "https://github.com/jinlize-tech/edu-teaching-quality-supervision-agent",
-  "product_version": "1.0.0",
+  "product_version": "1.0.1",
   "batch": 2,
   "business_category": "10 教学质量与学习证据中心",
   "high_risk": true,

@@ -9,7 +9,7 @@
   "product_type": "Agent",
   "category": "10 教学质量与学习证据中心",
   "batch": 2,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "core_outputs": [
     "专项督导方案",
@@ -26,8 +26,13 @@
   "high_risk": true,
   "deterministic": false,
   "scenario_count": 14,
-  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.0.zip",
+  "package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.1.zip",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+  "status": "DOCUMENTATION_AND_METADATA_PATCH_1.0.1_BUILT_PENDING_REMOTE_VERIFICATION",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-teaching-quality-supervision-agent-v1.0.0.zip",
+  "previous_package_sha256": "A3129393FDD748D3D3520682261A586D595C2CC5166D555093680F12669EE608",
+  "package_state": "PATCH_PACKAGE_V1.0.1_BUILT",
+  "readme_repair": "README_USAGE_INSTALLATION_ALIGNED_WITH_PACKAGE_CONTENTS"
 }
